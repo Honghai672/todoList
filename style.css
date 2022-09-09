@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #ffe200, #799f0c);
+  font-family: sans-serif;
+}
+
+.todo-app {
+  width: 400px;
+  margin: 100px auto;
+  background: #fff;
+  padding-top: 10px;
+  border-radius: 6px;
+}
+
+form {
+  border-bottom: 1px solid #aaa;
+  padding: 10px 20px;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+form input {
+  font-size: 22px;
+  width: 100%;
+  margin-right: 15px;
+  border: none;
+  outline: none;
+}
+
+form button {
+  padding: 8px 14px;
+  background: yellowgreen;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todos {
+  list-style: none;
+  padding: 15px;
+}
+
+.todos li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 0;
+  align-items: center;
+  cursor: pointer;
+}
+.todos li span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 80%;
+  overflow: hidden;
+}
+
+.todos li i {
+  color: rgb(154, 144, 144);
+}
+li.completed {
+  color: rgb(154, 144, 144);
+}
+
+li.completed span {
+  text-decoration: line-through;
+}
